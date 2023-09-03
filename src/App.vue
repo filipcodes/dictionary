@@ -1,10 +1,13 @@
 <script setup>
+import Header from "./components/Header.vue";
 import Searchbar from "./components/Searchbar.vue";
 import WordDisplay from "./components/WordDisplay.vue";
+Header;
 </script>
 
 <template>
   <main>
+    <Header></Header>
     <div class="container">
       <Searchbar @searchingForWord="searchForWord"></Searchbar>
       <WordDisplay v-if="currentWord" :wordObject="currentWord"></WordDisplay>
@@ -43,12 +46,12 @@ export default {
 @import "./assets/styles/reset.scss";
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 1.6rem;
 }
 
 main {
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 

@@ -46,21 +46,23 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/abstracts.scss";
 form {
-  background-color: lightgrey;
+  background-color: rgb(232, 232, 232);
 
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: 0.8rem 1.2rem 0.8rem 1.8rem;
+  padding: 1.4rem 1.4rem 1.4rem 1.8rem;
   border-radius: 1rem;
+  margin-bottom: 2.4rem;
 
   input {
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     background-color: transparent;
 
     outline: none;
     border: none;
     width: 90%;
+    font-weight: 500;
   }
 
   button {
@@ -68,6 +70,9 @@ form {
 
     border: none;
     width: 3rem;
+    padding: 0.2rem;
+
+    color: red;
   }
 }
 </style>
